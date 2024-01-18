@@ -7,7 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Get Started</h1>
+        <!-- form -->
+        <form action="" id="form">
+            <!-- full name -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your Full Name">
+            </div>
+            <!-- phone number -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tell" id="phone" placeholder="555-555-5555">
+            </div>
+            <!-- email address -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="your@email.com">
+            </div>
+            <!-- Website URL -->
+            <div class="form-group">
+                <label for="website">Website URL</label>
+                <input type="url" id="website" placeholder="http://jacinto.design">
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+                <label for="createPassword">Create Password</label>
+                <input type="password" id="createPassword" placeholder="Create password">
+            </div>
+            <!-- confirm password -->
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Error/Success Message -->
+        <div class="message-container">
+            <h3 id="message">Let's Create new account!</h3>
+        </div>
+    </div>
 
     <!-- script -->
     <script src="./script.js"></script>
