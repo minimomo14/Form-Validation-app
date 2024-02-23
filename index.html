@@ -14,17 +14,20 @@
             <!-- full name -->
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Enter your Full Name">
+                <input type="text" id="name" placeholder="Enter your Full Name"
+                required minlength="3" maxlength="100">
             </div>
             <!-- phone number -->
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tell" id="phone" placeholder="555-555-5555">
+                <input type="tell" id="phone" placeholder="555-555-5555"
+                required >
             </div>
             <!-- email address -->
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="your@email.com">
+                <input type="email" id="email" placeholder="your@email.com"
+                >
             </div>
             <!-- Website URL -->
             <div class="form-group">
@@ -34,12 +37,16 @@
             <!-- Password -->
             <div class="form-group">
                 <label for="createPassword">Create Password</label>
-                <input type="password" id="createPassword" placeholder="Create password">
+                <input type="password" id="createPassword" placeholder="Create password"
+                required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
             </div>
             <!-- confirm password -->
             <div class="form-group">
                 <label for="confirmPassword">Confirm Password</label>
-                <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                <input type="password" id="confirmPassword" 
+                placeholder="Confirm Password"
+                required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                >
             </div>
             <button type="submit">Submit</button>
         </form>
