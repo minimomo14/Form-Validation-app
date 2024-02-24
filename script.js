@@ -46,6 +46,20 @@ function validateForm() {
   }
 }
 
+// create function to store form data
+function storeFormData() {
+    const user = {
+        name: form.name.value,
+        phone: form.phone.value,
+        email: form.email.value,
+        website: form.website.value,
+        password: form.password.value
+    };
+    // see user data by console.log
+    // we can use that data later
+    console.log(user);
+}
+
 // handle submit button
 // create function processForm()
 function processForm(e) {
@@ -53,7 +67,11 @@ function processForm(e) {
   // console.log("event happen here", e)
   // validate form function
   validateForm();
-  // store data
+  // store data and submitted data if valid form was inputted correctly
+  if (isValid && isPasswordMatch) {
+    storeFormData();
+  }
+
 }
 
 form.addEventListener("submit", processForm);
